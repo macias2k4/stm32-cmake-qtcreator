@@ -37,25 +37,29 @@ int main()
  ```
  
  ## CMake
- Download and install last version of CMake. 
+ Download and install the last version of CMake.
  
 To make sure that we will use last version of CMake we need to go to page: https://cmake.org/download/ and download .sh file. In my case its `cmake-3.17.2-Linux-x86_64.sh`. 
  
  Then we need to run this script to extract his content and add cmake file link to usr/local/bin:
  ```console
-macias@macias-dev:~$ chmod +x cmake-3.17.2-Linux-x86_64.sh
-macias@macias-dev:~$ sudo mkdir -p /opt/cmake
-macias@macias-dev:~$ sudo sh cmake-3.17.2-Linux-x86_64.sh --prefix=/opt/cmake
-macias@macias-dev:~$ sudo ln -s /opt/cmake/bin/cmake /usr/local/bin/cmake
+chmod +x cmake-3.17.2-Linux-x86_64.sh
+sudo mkdir -p /opt/cmake
+sudo sh cmake-3.17.2-Linux-x86_64.sh --prefix=/opt/cmake
+sudo ln -s /opt/cmake/bin/cmake /usr/local/bin/cmake
  ```
  
- Now we can check version of cmake
+Now we can check the version of CMake:
 ```console
-macias@macias-dev:~$ cmake --version
+cmake --version
+```
+My result is:
+```
 cmake version 3.17.2
 
 CMake suite maintained and supported by Kitware (kitware.com/cmake).
 ```
+
  
  
  ## QtCreator
