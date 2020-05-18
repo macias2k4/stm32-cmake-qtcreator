@@ -65,6 +65,31 @@ CMake suite maintained and supported by Kitware (kitware.com/cmake).
  ## QtCreator
  
  ### Install QtCreator
- Download instalation file from https://download.qt.io/official_releases/qtcreator/
+ Download installation file from https://download.qt.io/official_releases/qtcreator/ and do installation process.
  
+ ### Setup QtCreator
  
+ During this phase, I use information from the page: http://www.iwasz.pl/electronics/stm32-on-ubuntu-linux-step-by-step/
+
+ #### Install Bare Metal plugin
+After start QtCreator, do:
+ - Help -> About Plugins
+ - Turn on ***BareMetal*** plugin
+
+ ![alt text](https://github.com/macias2k4/stm32-cmake-qtcreator/blob/master/resources/aboutPlugins_bareMetal.png?raw=true)
+ 
+ To make plugin active QtCreator have to be restarted.
+ 
+#### Add server provider for OpenOCD GDB
+ - Open Tools -> Options 
+ - Select ***Devices*** and tab ***Bare Metal***
+ - Add ***OpenOCD***, leave default parameter values and ***Apply***
+ 
+ ![alt text](https://github.com/macias2k4/stm32-cmake-qtcreator/blob/master/resources/options_devices_bareMetal.png?raw=true)
+ 
+ - Switch do tab ***Devices*** and ***Bare Metal Device***
+ - Set a name and select OpenOCD just created and ***Apply***
+ 
+ ![alt text](https://github.com/macias2k4/stm32-cmake-qtcreator/blob/master/resources/options_devices_devices.png?raw=true)
+ 
+
