@@ -65,6 +65,15 @@ CMake suite maintained and supported by Kitware (kitware.com/cmake).
  ## QtCreator
  
  ### Install QtCreator
- Download instalation file from https://download.qt.io/official_releases/qtcreator/
+ Download installation file from https://download.qt.io/official_releases/qtcreator/ and do installation process.
  
+ ### Setup QtCreator
+ 
+
+ #### Turn on Bare Metal
+After start QtCreator, call:
+ - Help -> About Plugins
+ - Turn on ***BareMetal*** plugin
+
+ ![alt text](https://github.com/macias2k4/stm32-cmake-qtcreator/blob/master/resources/aboutPlugins_bareMetal.png?raw=true)
  
