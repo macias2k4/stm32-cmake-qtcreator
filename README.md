@@ -70,6 +70,7 @@ CMake suite maintained and supported by Kitware (kitware.com/cmake).
  ### Setup QtCreator
  
  During this phase, I use information from the page: http://www.iwasz.pl/electronics/stm32-on-ubuntu-linux-step-by-step/
+ https://doc.qt.io/qtcreator/creator-developing-baremetal.html
 
  #### Install Bare Metal plugin
 After start QtCreator, do:
@@ -87,9 +88,23 @@ After start QtCreator, do:
  
  ![alt text](https://github.com/macias2k4/stm32-cmake-qtcreator/blob/master/resources/options_devices_bareMetal.png?raw=true)
  
+ #### Adding Bare Metal Devices
+ 
  - Switch do tab ***Devices*** and ***Bare Metal Device***
  - Set a name and select OpenOCD just created and ***Apply***
  
  ![alt text](https://github.com/macias2k4/stm32-cmake-qtcreator/blob/master/resources/options_devices_devices.png?raw=true)
  
+ #### Configure Compilers
+ 
+ - Open ***Tools -> Options***
+ - Select ***Kits*** and tab ***Compilers***
+ - Use ***Add -> GCC -> C***. Set 'Name' (e.g. ***ARM GCC 9 (C)***) and set a path to file ***arm-none-eabi-gcc*** in directory where you uncomprese file ***xpack-arm-none-eabi-gcc-9.2.1-1.1-linux-x64.tar.gz*** from first chapter ***ARM GCC***
+ - Use ***Add -> GCC -> C++***. Set 'Name' (e.g. ***ARM-GCC 9 (C++)***) and set a path to file ***arm-none-eabi-g++*** in directory where you uncomprese file ***xpack-arm-none-eabi-gcc-9.2.1-1.1-linux-x64.tar.gz*** from first chapter ***ARM GCC***
+ 
+ ![alt text](https://github.com/macias2k4/stm32-cmake-qtcreator/blob/master/resources/options_kits_compilers.png?raw=true)
+ 
+ 
+ 
+ #### Configure Kit for building application for ARM device
 
