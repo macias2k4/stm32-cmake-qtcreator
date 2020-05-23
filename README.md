@@ -116,3 +116,32 @@ After start QtCreator, do:
  
  ![alt text](https://github.com/macias2k4/stm32-cmake-qtcreator/blob/master/resources/options_kits_kits.png?raw=true)
  
+## STM32 tools (Stm32CubeMX, HAL)
+
+So far we can compile C/C++ code in ARM-GCC compiler in a command line or IDE (QtCreator), but to create software for STM32 (e.g. Nucleo) we still need something more:
+- **Stm32CubeMX** - UI tool, for configuring peripherals for microcontroller STM32
+- **HAL** *(Hardware Abstraction Layer)* - interface for microcontroller hardware
+
+### Installing Stm32CubeMX
+
+Install java if it's not already installed:
+```console
+sudo apt-get update && apt-get upgrade
+sudo apt-get install default-jdk
+```
+
+Download STM32CubeMX from site: https://www.st.com/en/development-tools/stm32cubemx.html
+
+ Then we need to run the installation process (when I'm writing this article current version was 5-6-1):
+ ```console
+unzip en.stm32cubemx_v5-6-1.zip
+chmod +x SetupSTM32CubeMX-5.6.1.linux
+sudo ./SetupSTM32CubeMX-5.6.1.linux
+ ```
+ 
+ Now we can run STM32CubeMX to check is it work (go to installation path and start the application)
+ ```console
+ cd /usr/local/STMicroelectronics/STM32Cube/STM32CubeMX
+ sudo ./STM32CubeMX
+ ```
+ 
