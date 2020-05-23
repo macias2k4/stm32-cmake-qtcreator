@@ -104,7 +104,15 @@ After start QtCreator, do:
  
  ![alt text](https://github.com/macias2k4/stm32-cmake-qtcreator/blob/master/resources/options_kits_compilers.png?raw=true)
  
- 
- 
  #### Configure Kit for building application for ARM device
-
+  
+ - Open ***Tools -> Options***
+ - Select ***Kits*** and tab ***Kits***
+ - Use ***Add*** to create new kiy
+  - Set ***Name*** e.g. *ARM CMake GCC 9*
+  - Set ***Device type*** to *Bare Metal Device*
+  - Set ***Device*** to device created in step **Adding Bare Metal Devices** (in my case it's *STM32F4*)
+  - Set C and C++ compiler created in step **Configure Compilers** and ***Apply***
+ 
+ ![alt text](https://github.com/macias2k4/stm32-cmake-qtcreator/blob/master/resources/options_kits_kits.png?raw=true)
+ 
