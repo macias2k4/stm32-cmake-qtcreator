@@ -145,3 +145,24 @@ sudo ./SetupSTM32CubeMX-5.6.1.linux
  sudo ./STM32CubeMX
  ```
  
+## First project (blinking LED)
+ 
+ It's finally time to create the first project for our board. This will be blinking led.
+
+### Configure microcontroller periphery and generate code
+ 
+ When we start STM32CubeMX application I use option **ACCESS TO BOARD SELECTOR**. Then in **Part Number Search** write the name of board *Nucleo-f411re*(in my case). Select board on the bottom list and use **Start Project**.
+ 
+ ![alt text](https://github.com/macias2k4/stm32-cmake-qtcreator/blob/master/resources/stm32cubemx_boardSelector.png?raw=true)
+ 
+ After that we will see a view of **Pinout & Configuration** (we leave this in default settings). We switch to **Project Manager** and set needed parameters in his tabs: **Project, Code Generator**.
+ 
+. images
+
+After setting all parameters we use button **GENERATE CODE**
+
+### Generating CMake project file from STM32CubeMX project file
+
+
+
+### 
