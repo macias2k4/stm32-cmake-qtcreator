@@ -1,6 +1,12 @@
 # stm32-cmake-qtcreator
 This project is how to prepare a development environment for writing applications for STM32 (e.g. Nucleo) on **Linux (Ubuntu)**. By using: ARM GCC, CMake, and QtCreator.
 
+1. [ARM GCC](#arm-gcc)
+2. [CMake](#cmake)
+3. [QtCreator](#qtcreator)
+4. [STM32 tools (Stm32CubeMX, HAL)](#stm32tools)
+5. [First project (blinking LED)](#firstproject)
+
 ## ARM GCC
 
 Choose and download package for your OS from the page: https://xpack.github.io/arm-none-eabi-gcc/releases/
