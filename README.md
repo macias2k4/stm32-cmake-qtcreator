@@ -217,3 +217,19 @@ To upload compile result into the board, we need to open the console in a place 
 ```console
 openocd -f interface/stlink-v2-1.cfg -f target/stm32f4x.cfg -c 'program Nucleo_CMake.elf verify reset exit'
 ```
+
+### Compile project in QtCreator
+
+Before we open the project, we need to set defines for CMake in our Kit. So we start QtCreator and use ***Tools -> Options..."** then select tabs **Build & Run -> Kits**. Select your kit for GCC ARM (in my case it's *ARM CMake GCC 9*) and change option on to bottom **CMake Configuration** to (remember to change path to file *stm32f411xx.cmake*to your own):
+```cmake
+CMAKE_CXX_COMPILER:STRING=%{Compiler:Executable:Cxx}
+CMAKE_C_COMPILER:STRING=%{Compiler:Executable:C}
+CMAKE_TOOLCHAIN_FILE:INTERNAL=/media/macias/data/projects/source/C++/blinkingLED/stm32f411xx.cmake
+```
+
+Then we can open the project. Use **File -> Open File or Project** select top-level *CMakeLists.txt* file and use **Open**.
+In window **Configure Project** we select the kit for GCC ARM. Check *Release* and *Debug* and set the paths where the project will be built. Then use **Configure Project**. We will see:
+
+![alt text](https://github.com/macias2k4/stm32-cmake-qtcreator/blob/master/resources/qtCreator_Project.png?raw=true)
+
+Now you can use build option to create an output file for Nucleo board.
